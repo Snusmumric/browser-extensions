@@ -1,0 +1,17 @@
+{
+  "name": "Статистика календарей calendar.mail.ru",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "src/views/popup/index.html"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "cookies"
+  ],
+  "host_permissions": [
+    "*://*.mail.ru"
+  ]
+}
